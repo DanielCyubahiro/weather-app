@@ -8,7 +8,6 @@ The **Weather App** is a simple and interactive web application that allows user
 - 🔎 Search for the weather of any city worldwide.
 - 🌡️ Supports both **Celsius** and **Fahrenheit**.
 - 📆 Provides a **6-day weather forecast**.
-- 🎨 Clean and modern UI built with **Material UI**.
 - ⚡ Fast and responsive using **HTML5, CSS3, and Vanilla JavaScript**.
 - ☁️ Powered by **OpenWeather API**.
 
@@ -16,7 +15,6 @@ The **Weather App** is a simple and interactive web application that allows user
 - **HTML5** - For structuring the app.
 - **CSS3** - For styling and layout.
 - **Vanilla JavaScript** - For handling logic and API requests.
-- **Material UI** - For enhancing UI components.
 - **OpenWeather API** - To fetch real-time weather data.
 
 ## 🚀 How to Run the Project
