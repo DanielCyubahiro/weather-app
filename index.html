@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+</head>
+<body >
+  <main id="app">
+    <h1>Weather App</h1>
+    <section class="searchBar" id="searchBar">
+      <form id="searchForm">
+        <label for="searchInput">Enter a new location</label>
+        <input type="text" id="searchInput" placeholder="City, State, Country">
+        <button type="submit">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-sync fa-spin"></i>
+        </button>
+      </form>
+    </section>
+
+    <a href="#currentForecast" class="skip-link">Skip to current conditions </a>
+
+    <section class="currentForecast" id="currentForecast">
+      <h2 id="currentForecast__title" class="currentForecast__title">Current
+        Forecast</h2>
+      <div id="currentForecast__content" class="currentForecast__content"></div>
+    </section>
+
+    <a href="#dailyForecast" class="skip-link">Skip to daily forecasts </a>
+
+    <nav id="navigationBar" class="navigationBar">
+      <button id="currentLocation__button" title="Current Location Weather"
+              class="navigationBar__button">
+        <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-sync fa-spin"></i>
+      </button>
+      <button id="homeLocation__button" title="Home Weather"
+              class="navigationBar__button">
+        <i class="fas fa-home"></i>
+        <i class="fas fa-sync fa-spin"></i>
+      </button>
+      <button id="saveLocation__button" title="Save Location"
+              class="navigationBar__button">
+        <i class="fas fa-save"></i>
+        <i class="fas fa-sync fa-spin"></i>
+      </button>
+      <button id="changeUnit__button" title="Toggle Measurement Units"
+              class="navigationBar__button">
+        <i class="fas fa-chart-area"></i>
+        <i class="fas fa-sync fa-spin"></i>
+      </button>
+      <button id="refresh__button" title="Refresh Weather"
+              class="navigationBar__button">
+        <i class="fas fa-refresh"></i>
+        <i class="fas fa-sync fa-spin"></i>
+      </button>
+    </nav>
+    <hr>
+    <section class="dailyForecast" id="dailyForecast">
+      <h2 id="dailyForecast__title" class="dailyForecast__title">Six Day
+        Forecast</h2>
+      <div id="dailyForecast__content" class="dailyForecast__content"></div>
+    </section>
+    <p class="offscreen" id="confirmation" aria-live="assertive"></p>
+  </main>
+</body>
+</html>
